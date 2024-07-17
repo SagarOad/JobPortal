@@ -5,7 +5,7 @@ import axios from "axios";
 import { formatDistanceToNow } from "date-fns";
 import Navbar from "@/components/Navbar";
 import Lottie from "react-lottie";
-import animationData from "../../animation/loading.JSON";
+import animationData from "@/animation/loading.JSON";
 
 const page = () => {
   const [jobs, setJobs] = useState([]);
