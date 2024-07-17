@@ -1,0 +1,110 @@
+body {
+  overflow-x: hidden;
+}
+
+.myInput {
+  border: 1px solid white !important;
+  border-bottom: 1.2px solid rgba(128, 128, 128, 0.3) !important;
+}
+
+svg {
+  width: 22px;
+}
+.primary-color {
+  color: #034158;
+}
+
+.primary-button {
+  background-color: #034158;
+  color: white;
+  padding: 8px 28px 8px 28px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-page {
+  height: 100vh;
+}
+
+.login-form-container {
+  padding: 16px 190px 16px 146px;
+}
+.position-absolute.logo-container {
+  padding: 34px 146px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+  caret-color: auto !important;
+}
+
+.login-bg {
+  background-image: url(../assets/login-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.main-img {
+  background-image: url(../assets/login-bg.png);
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  /* Adjust breakpoint as needed */
+  .d-flex.w-100.main-page {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .job-title {
+    font-size: 16px !important;
+  }
+
+  .posted-date {
+    font-size: 12px !important;
+  }
+
+  .experience-required {
+    font-size: 12px !important;
+  }
+
+  .w-50.flex.align-content-center {
+    width: 100% !important;
+  }
+
+  .login-bg {
+    width: 100% !important;
+    padding: 46px !important;
+  }
+
+  svg {
+    width: 18px;
+  }
+
+  .job-character {
+    height: 28px !important;
+    width: 28px !important;
+    font-size: 14px !important;
+    margin-right: 12px !important;
+  }
+
+  .login-form-container {
+    padding: 46px 22px;
+  }
+}
+
+.job-row:hover {
+  background-color: #f8f8f8;
+}
+
+/* background: #F8F8F8;
+border-radius: 50px; */
