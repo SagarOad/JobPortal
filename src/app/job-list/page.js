@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { formatDistanceToNow } from "date-fns";
 import Navbar from "@/components/Navbar";
-import Lottie from "react-lottie";
-import animationData from "@/animation/loading.json";
+// import Lottie from "react-lottie";
+// import animationData from "@/animation/loading.json";
 
 const page = () => {
   const [jobs, setJobs] = useState([]);
@@ -49,14 +49,14 @@ const page = () => {
     return color;
   };
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
   return (
     <div>
@@ -68,9 +68,9 @@ const page = () => {
         {loading ? (
           <div
             style={{ height: "55vh", width: "100%" }}
-            className="d-flex justify-content-center align-items-center"
+            className=""
           >
-            <Lottie options={defaultOptions} height={100} width={100} />
+           Loading...
           </div>
         ) : (
           <div>
